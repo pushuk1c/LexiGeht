@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LexiGeht.Views.Main.ProfilePage">
+    
+    
+    <VerticalStackLayout Spacing="10">
+
+        <Label Grid.Column="0" Margin="0,40,0,0"
+            Text="Profil" 
+            HorizontalOptions="Center"
+            TextColor="Black" 
+            FontFamily="RobotoRegular"
+            FontSize="20" 
+        />
+
+        <Border Stroke="Gray" Margin="20,0,20,20"/>
+
+        <Label Grid.Column="0" Margin="60,0"
+            Text="Benutzername" 
+            HorizontalOptions="Start"
+            TextColor="Black" 
+            FontFamily="RobotoRegular"
+            FontSize="16" 
+            />
+
+        <Border Background="#ebe1ff"
+            Stroke="Transparent"
+            Margin="40,0"
+            StrokeShape="RoundRectangle 30">
+
+            <Grid Padding="16,0">
+                <Entry Text="{Binding Username}"
+                    FontSize="20" 
+                    TextColor="#5e17eb"
+                    VerticalTextAlignment="Center"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="Transparent"
+                    />
+            </Grid>
+        </Border>
+
+        <Label Grid.Column="0" Margin="60,0"
+            Text="Email" 
+            HorizontalOptions="Start"
+            TextColor="Black" 
+            FontFamily="RobotoRegular"
+            FontSize="16" 
+            />
+
+        <Border Background="#ebe1ff"
+            Stroke="Transparent"
+            Margin="40,0"
+            StrokeShape="RoundRectangle 30">
+
+            <Grid Padding="16,0">
+                <Entry Text="{Binding Email}"
+                    FontSize="20" 
+                    TextColor="#5e17eb"
+                    VerticalTextAlignment="Center"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="Transparent"
+            />
+            </Grid>
+        </Border>
+
+        <Label Grid.Column="0" Margin="60,0"
+            Text="Kennwort" 
+            HorizontalOptions="Start"
+            TextColor="Black" 
+            FontFamily="RobotoRegular"
+            FontSize="16" 
+            />
+
+        <Border Background="#ebe1ff"
+            Stroke="Transparent"
+            Margin="40,0"
+            StrokeShape="RoundRectangle 30">
+
+            <Grid Padding="16,0">
+                <Entry Text="{Binding Password}"
+                    FontSize="20" 
+                    TextColor="#5e17eb"
+                    VerticalTextAlignment="Center"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="Transparent"
+                    />
+            </Grid>
+        </Border>
+
+        <Border Stroke="Grey" Margin="20,20,20,0"/>
+
+        <HorizontalStackLayout Spacing="20" Margin="20" HorizontalOptions="Center">
+
+            <Button Text="Speichern" Command="{Binding SaveCommand}"
+                TextColor="#5e17eb"
+                BorderWidth="2"
+                BorderColor="#5e17eb"
+                BackgroundColor="Transparent"
+                CornerRadius="30"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Padding="40,5"
+                FontSize="18"
+                FontFamily="RobotoRegular"/>
+
+
+            <Button Text="Abmelden" Command="{Binding SignOutCommand}"
+                TextColor="#5e17eb"
+                BorderWidth="2"
+                BorderColor="#5e17eb"
+                BackgroundColor="Transparent"
+                CornerRadius="30"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Padding="40,5"
+                FontSize="18"
+                FontFamily="RobotoRegular"/>
+
+
+        </HorizontalStackLayout>
+        
+       
+
+    </VerticalStackLayout>
+    
+    
+</ContentPage>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:LexiGeht.Controls"
+             x:Class="LexiGeht.Views.Main.QuizResultPage">
+    
+      
+        <Grid RowDefinitions="*"
+               BackgroundColor="WhiteSmoke">
+           
+            <Frame Grid.Row="0" HasShadow="True" CornerRadius="12" Margin="10,10,10,10">
+                <Grid RowDefinitions="Auto,Auto,*,Auto" Margin="0">
+
+                    <Grid Grid.Row="0" Margin="10">
+                        <controls:CircularProgressBar Grid.Column="2" Progress="{Binding Progress}" 
+                              ProgressColor="Green" ProgressSize="10" PersentageFontSize="50"
+                              WidthRequest="180" HeightRequest="180" 
+                              HorizontalOptions="Center" VerticalOptions="Center"
+                              Margin="10,0,10,0"/>
+                    </Grid>
+
+                    <Label Grid.Row="1"                        
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center" 
+                        FontSize="26" 
+                        FontFamily="RobotoRegular"
+                        Margin="10,10">
+
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Quiz Fragen: " />
+                                <Span Text="{Binding Total}" FontAttributes="Bold"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                    <Label Grid.Row="2"
+                        LineBreakMode="WordWrap"
+                        MaxLines="0"               
+                        HorizontalOptions="FillAndExpand"
+                        HorizontalTextAlignment="Center"
+                        VerticalOptions="Start" 
+                        FontSize="20" 
+                        FontFamily="RobotoRegular"
+                        Margin="10,10">
+
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Dein Ergebnis: " />
+                                <Span Text="{Binding Score}" FontAttributes="Bold"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+
+                    <Button Grid.Row="3" Text="OK" Command="{Binding EndQuizCommand}"
+                        Margin="5,5,5,5"
+                        TextColor="White"
+                        BorderWidth="1"
+                        BorderColor="#5e17eb"
+                        BackgroundColor="#5e17eb"
+                        CornerRadius="30"
+                        HorizontalOptions="Center"
+                        VerticalOptions="End"
+                        Padding="20,5"
+                        FontSize="18"
+                        FontFamily="RobotoRegular"
+                        WidthRequest="300"/>
+
+                </Grid>
+            </Frame>
+
+    </Grid>
+        
+    
+    
+    
+</ContentPage>

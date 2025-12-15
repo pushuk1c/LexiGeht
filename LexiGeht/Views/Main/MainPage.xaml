@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:LexiGeht.Controls"
+             x:Class="LexiGeht.Views.Main.MainPage">      
+
+    <Grid RowDefinitions="Auto,Auto,Auto,Auto,*"
+          BackgroundColor="WhiteSmoke">
+
+        <Grid ColumnDefinitions="*" Grid.Row="0">
+            <Label Text="Hallo, Sabrina!" 
+                   TextColor="Black" 
+                   FontSize="16" 
+                   FontFamily="RobotoRegular"
+                   HorizontalOptions="Start"
+                   Padding="15"/>
+            
+        </Grid>
+
+        <Grid Grid.Row="1" ColumnDefinitions="*" Margin="10,0,10,10" >
+            <Label Text="Woran möchtest du heute arbeiten?" 
+                TextColor="Black" 
+                FontSize="20" 
+                FontFamily="RobotoExtraBold"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"   
+                Padding="15,0,10,0"/>
+
+        </Grid>
+
+        <CollectionView Grid.Row="2" ItemsSource="{Binding Courses}"
+                        ItemsLayout="HorizontalList"
+                        HorizontalScrollBarVisibility="Never"
+                        Margin="10,0,0,0">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame HasShadow="True" CornerRadius="12" WidthRequest="200" Margin="10,10,0,10" Padding="10">
+                        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="5" >
+                            <Image Source="{Binding Image}" Aspect="AspectFit" HeightRequest="180" WidthRequest="200"/>
+                            
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Grid Grid.Row="3" ColumnDefinitions="*"  Margin="10,15,10,10">
+            <Label Text="Unvollendete Quizze" 
+                TextColor="Black" 
+                FontSize="16" 
+                FontFamily="RobotoExtraBold"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"   
+            Padding="15,0,10,0"/>
+
+        </Grid>
+
+        <CollectionView Grid.Row="4" ItemsSource="{Binding Quizzes}" 
+                        ItemsLayout="VerticalList" 
+                        VerticalScrollBarVisibility="Never">
+            
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame HasShadow="True" CornerRadius="12" Margin="20,5,20,5"  Padding="1">
+                        
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer
+                                 Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}},
+                                                     Path=BindingContext.OpenQuizCommand}"
+                                CommandParameter="{Binding .}" />
+                        </Frame.GestureRecognizers>
+
+                        <Grid ColumnDefinitions="Auto,Auto,*">
+
+
+                            <Image Grid.Column="0" Source="{Binding ImagePathSource}" Aspect="AspectFit" HeightRequest="50" WidthRequest="50" Margin="2"/>
+                        
+                            <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" >
+                                <Label Text="{Binding Title}" 
+                                    TextColor="Black" 
+                                    FontSize="16" 
+                                    FontFamily="RobotoRegular"
+                                    HorizontalOptions="Start"
+                                    Margin="10,5,10,0"/>
+                               
+                                <Label Text=" 20 Questions" 
+                                    TextColor="Gray" 
+                                    FontSize="14" 
+                                    FontFamily="RobotoRegular"
+                                    HorizontalOptions="Start"
+                                    Margin="10,5,10,5"/>
+                            </VerticalStackLayout>
+
+                            <controls:CircularProgressBar Grid.Column="2" Progress="{Binding Progress}" 
+                                                          WidthRequest="45" HeightRequest="45" 
+                                                          HorizontalOptions="End" VerticalOptions="Center"
+                                                          Margin="10,0,10,0"/>
+
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+     
+        
+
+    </Grid>
+
+</ContentPage>

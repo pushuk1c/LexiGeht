@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "lexigeht",
+  "private_key_id": "8bcbe84390ad1969cd88635b8a454e375b5ad5cb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDUedFdIEW3mCdK\ndnwRHHYzPZS0QglSllJDVJ0MBDEL/ljeJFodzsrUQF6i15+x0VQvZAoNwBHOV1Ya\n9uxJghCEeZfZvowPJ0yIdHQN98Vk4dHogriJBcJjvElHIzPANFlQNtw/1zMOVYUj\nboaJCDWkKzOvkgD3xj5qIjy+mp3UMemtFzMORnMsNuhW7Guf2GUtYSae6RnkWxR2\nU1YUEi6um2l8C+XCrtLCSCUGZE8uODRqvVB6z6B5HWW7zOkjJW5vxfqVCMyJVxDy\nsz49QJl+Uka7hQU4cKQkQ0FJ4DyYFfiuUGAFiYL57DBjts2Mmp5sE6+ziEULy4l1\nPJ5ZNkZbAgMBAAECggEAFPjx5PF2tYtZCX0OJvmPuI68sFmPplgRxkqXoSQtcS50\nYszkxj9vVCmxuFIfQFkrUu2Fc9urBkUm9HdoqvghyD8LnDcLh8K3HQWdn56pccPm\nc77/bFWmB9vXFySkNYsVQRkr0/NaZfD5Y3NuknUTJ7a0ndZZWRuiH9jBn9tkIRnJ\nYuP11am/a+USAITxq3tJiqZzOtNDX9CDlKesDbk4a664BEEyVEkDMo6/RfpdfDCl\n0Rc8KyvLTgG3h2+iEIII0Lj22MsCPrfiuL79FBAcxPQpT2EN3BmuY68XnanzzJkI\ncFJlA0hKUSYZGPZT/SNmY+dFEd3JiL/fpnwmYPhh4QKBgQDzyYF66SQldbtLUwVS\ne9j/Ew19PTOd4WBC9Jvwd+vtkfj+NzknTOEuZwDCkQBa/e8MrDJfSlxfFy6/BEyq\nb3/V9StLNqUSngZJx+bHw7o0AFhjJ21kwkjB6pg/wh1M8gNnWs9AC1u9DRG8Fhr6\n2hQ+S5umEYOVf/Df77Z+ocGdewKBgQDfHsEtHzvxxPKXVuEOPaZvSwy+FoSVF5Un\n7jFjzN4p9vXyL32kgAa97pi8hVpsq6xjQTVrE0/PmCX0eyFkSQQy1B3zUidSMUBg\ndbskjBCLRRIoTDsJUieZuUhqE17cUI1nsx9nDWtz1KFuW6doNe3tY4PFwehfy8Ao\nbdH3izv0oQKBgQCv3svxDqZL++4dPgxV4BDAm08c7X0CRef7BZpF1U23upoFU3OA\n3Z6JqjdLJe46tnyxCLziL7QJyaConwJr5joz8UXFYeueTbA9o9/id1oqT6F0DqqF\niP+SHZquTGx06Rb5hfKDwm3xKa+En/HgzFjURBlKqdHilUUBWF6wZiNWZwKBgQDO\nFYUOXVwr6uK7gIatdaol/+cMKJZbc4XUdQDvkondrvrqsIzXhV00z44KCw5Dc6nt\nn4xsk1DTiU/9akGkdIDJRf1IAqjJFS7GKdgqYKjjSnAEAq1A5b4oEehd+fhTfJ+v\nmdY2hEGsokhdO5D8A1v5OUK8RWeSHAsoDI+0mslNIQKBgB7zeEor5u8uri62lBYE\n/OIAxAMhkuyMOF/4eVIEo8/nxTsTx//UlLAnlXpoW55+NSuwjklRTyau2KA1ilfj\nDWK6e/Z2AAowasrih+hyRP4ODZcQ7fbPCX6CYlejy9k0N9ChD7QnsclpYcQWQCVo\nErzodw1eDAckiHN8k9+ujH3x\n-----END PRIVATE KEY-----\n",
+  "client_email": "sheetsreader@lexigeht.iam.gserviceaccount.com",
+  "client_id": "115994057038048756631",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sheetsreader%40lexigeht.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
